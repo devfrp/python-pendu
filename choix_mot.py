@@ -1,7 +1,7 @@
 import pandas as pd
 from random import randint
 
-def choix_mot(fichier="D:\projet 1\dico.csv", longueur_min=3, longueur_max=10):
+def choix_mot(fichier="dico.csv", longueur_min=3, longueur_max=10):
     banque_de_mot = pd.read_csv(fichier,usecols=['mot'], sep=',')
     nb_mots=banque_de_mot.mot.count()
     mot=''
